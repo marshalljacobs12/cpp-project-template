@@ -5,9 +5,9 @@
 // can be placed in a tests/*.cpp file. Integration tests are a good example.
 
 // Demonstrate some basic assertions.
-TEST(HelloTest, BasicAssertions) {
+TEST(HelloTest2, BasicAssertions) {
   // Expect two strings not to be equal.
   EXPECT_STRNE("hello", "world");
   // Expect equality.
-  EXPECT_EQ(7 * 6, 42);
+  EXPECT_EQ(5 * 6, 30);
 }

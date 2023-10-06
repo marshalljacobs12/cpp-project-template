@@ -12,10 +12,12 @@ bool Dummy::doSomething() {
 }
 
 
-#ifdef ENABLE_DOCTEST_IN_LIBRARY
-#include "doctest/doctest.h"
-TEST_CASE("we can have tests written here, to test impl. details")
-{
-    CHECK(true);
+#ifdef ENABLE_GTEST_IN_LIBRARY
+#include "gtest/gtest.h"
+TEST(HelloTest4, BasicAssertions3) {
+  // Expect two strings not to be equal.
+//   EXPECT_STRNE("hello", "world");
+  // Expect equality.
+  EXPECT_EQ(8 * 6, 48);
 }
 #endif
